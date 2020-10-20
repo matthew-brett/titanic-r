@@ -5,8 +5,38 @@ output: html_notebook
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. 
 
-You know the drill now, but you can add a new chunk by clicking the *Insert
-Chunk* button on the toolbar or by pressing *Cmd+Option+I*.
+The notebook allows us to mix text (like this) and code in *chunks* (see below).
+
+You can add a new chunk by clicking the *Insert Chunk* button on the toolbar or
+by pressing *Cmd+Option+I*.
+
+## The R notebook
+
+Here is a code chunk:
+
+```{r}
+a <- 10
+```
+
+Run the code chunk with the Run arrow at the right of the chunk, or press
+*Cmd-Shift-Enter* while the cursor is inside the chunk.
+
+You should now know that you can read the chunk above as "The variable 'a' gets
+the value 10."
+
+You can show the result by putting the new variable on a line on its own in a
+chunk like this:
+
+```{r}
+a
+```
+
+Now notice the stuff at the top and the bottom of the code chunk.  The starting
+characters that tell the notebook about the start and end of a code chunk are
+three *backtick* characters.  Try deleting a backtick in the start and end of
+the chunk above and see what happens.  Then put the backtick back, to fix.
+
+## Titanic passengers
 
 We first read the dataset containing information about the passengers (not
 crew) who were on the RMS Titanic when it sank.
